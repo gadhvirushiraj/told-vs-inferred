@@ -9,6 +9,7 @@ description = "Analysis of told vs inferred statements"
 requires-python = ">=3.11"
 dependencies = [
     "torch>=2.4.0",
+    "torchvision",
     "transformers>=4.40.0",
     "nnsight",
     "accelerate",
@@ -17,6 +18,7 @@ dependencies = [
     "python-dotenv",
     "numpy",
     "tqdm",
+    "matplotlib",
 ]
 
 [project.optional-dependencies]
