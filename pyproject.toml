@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "told-vs-inferred"
+version = "0.1.0"
+description = "Analysis of told vs inferred statements"
+requires-python = ">=3.11"
+dependencies = [
+    "torch>=2.4.0",
+    "transformers>=4.40.0",
+    "nnsight",
+    "accelerate",
+    "huggingface_hub",
+    "scikit-learn",
+    "python-dotenv",
+    "numpy",
+    "tqdm",
+]
+
+[project.optional-dependencies]
+dev = [
+    "jupyter",
+    "ipython",
+]
+
+[tool.setuptools]
+packages = []
